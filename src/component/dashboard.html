@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.11.1/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+
+  <body>
+    <section
+      class="bg-white md:my-12 md:mx-12 md:rounded-3xl h-[93vh] md:h-[80vh]"
+    >
+      <div class="flex justify-center">
+        <p class="text-xl font-extrabold pt-4">My Trips</p>
+      </div>
+      <ul
+        class="menu menu-horizontal w-full justify-between font-bold shadow-lg text-xl"
+      >
+        <li class="hover:text-[#5F97FB]"><a>Upcoming</a></li>
+        <li class="hover:text-[#5F97FB]"><a>Completed</a></li>
+        <li class="hover:text-[#5F97FB]"><a>Cancelled</a></li>
+      </ul>
+
+      <div
+        class="flex justify-center flex-wrap md:gap-10 md:justify-start md:mx-11 md:pt-11"
+      >
+        <a href="#" class="card w-96 h-80 mt-10 shadow-xl relative">
+          <figure>
+            <img
+              src="../../public/image/destination/singapore.jpg"
+              alt="singapore"
+            />
+            <div
+              class="absolute top-2 left-2 text-white bg-black bg-opacity-30 p-2 rounded-full flex"
+            >
+              <p>Bangkok</p>
+              <img src="../../public/image/plane.png" class="w-6 mx-4" alt="" />
+              <p>Singapore</p>
+            </div>
+          </figure>
+          <div class="card-body flex-row h-24 px-4 py-4">
+            <div class="mr-8 w-64">
+              <h2 class="card-title text-[#5F97FB]">
+                จำนวน Voyager
+                <div
+                  class="badge badge-secondary rounded-full w-6 h-6 font-bold bg-[#5F97FB] text-xl border-0"
+                >
+                  2
+                </div>
+              </h2>
+              <h2 class="text-l font-bold">Booking ID : 123456</h2>
+            </div>
+            <div
+              class="rounded-full w-16 h-16 border-solid border-[#5F97FB] border-2 font-bold flex flex-col items-center justify-center text-[#5F97FB]"
+            >
+              <p class="text-2xl">12</p>
+              <p>AUG</p>
+            </div>
+          </div>
+        </a>
+        <a href="#" class="card w-96 h-80 mt-10 shadow-xl relative">
+          <figure>
+            <img
+              src="../../public/image/destination/aquarium.jpg"
+              alt="singapore"
+            />
+            <div
+              class="absolute top-2 left-2 text-white bg-black bg-opacity-30 p-2 rounded-full flex"
+            >
+              <p>Bangkok</p>
+              <img src="../../public/image/plane.png" class="w-6 mx-4" alt="" />
+              <p>Japan</p>
+            </div>
+          </figure>
+          <div class="card-body flex-row h-24 px-4 py-4">
+            <div class="mr-8 w-64">
+              <h2 class="card-title text-[#5F97FB]">
+                จำนวน Voyager
+                <div
+                  class="badge badge-secondary rounded-full w-6 h-6 font-bold bg-[#5F97FB] text-xl border-0"
+                >
+                  4
+                </div>
+              </h2>
+              <h2 class="text-l font-bold">Booking ID : 843217</h2>
+            </div>
+            <div
+              class="rounded-full w-16 h-16 border-solid border-[#5F97FB] border-2 font-bold flex flex-col items-center justify-center text-[#5F97FB]"
+            >
+              <p class="text-2xl">26</p>
+              <p>AUG</p>
+            </div>
+          </div>
+        </a>
+      </div>
+    </section>
+  </body>
+</html>
