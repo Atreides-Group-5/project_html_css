@@ -20,12 +20,17 @@
     <title>Register</title>
   </head>
   <body>
-    <section class="Login">
+    <section class="Register Mobile md:hidden">
       <div
-        class="h-full bg-cover bg-center bg-no-repeat bg-[url('../../assets/bg.svg')]"
+        class="min-h-screen flex flex-col md:items-center md:justify-center relative"
       >
-        <div class="min-h-screen flex flex-col items-center justify-center">
-          <div class="bg-white p-8 rounded-lg shadow-md w-96">
+      <img 
+      src="../../assets/bg.svg" 
+      alt="Background Image"
+      class="absolute w-full md:h-full h-2/4 object-cover"
+    >
+        <div class="bg-white p-8 rounded-t-3xl shadow-md w-full md:w-96 absolute bottom-0">
+          <div class="bg-white p-8 rounded-lg">
             <div class="text-3xl font-bold text-blue-500 mb-8">
               <p class="drop-shadow-xl">Enjoy the trip with Voyage</p>
             </div>
@@ -65,6 +70,52 @@
           </div>
         </div>
       </div>
+    </section>
+    <section class="Register Desktop md:block flex">
+      <div
+      class="h-full bg-cover bg-center bg-no-repeat bg-[url('../../assets/bg.svg')]"
+    >
+      <div class="min-h-screen flex flex-col items-center justify-center">
+        <div class="bg-white p-8 rounded-lg shadow-md w-96">
+          <div class="text-3xl font-bold text-blue-500 mb-8">
+            <p class="drop-shadow-xl">Enjoy the trip with Voyage</p>
+          </div>
+          <h1 class="text-2xl text-left text-gray-800 font-semibold mb-6">
+            New Account
+          </h1>
+          <div class="relative">
+            <input
+              class="w-full p-2 rounded mt-2 outline-none"
+              type="email"
+              placeholder="Email"
+            />
+            <hr class="absolute bottom-0 z-50 w-full bg-red-500" />
+          </div>
+          <div class="relative">
+            <input
+              class="w-full p-2 rounded mt-2 outline-none"
+              type="text"
+              placeholder="Username"
+            />
+            <hr class="absolute bottom-0 z-50 w-full bg-red-500" />
+          </div>
+          <div class="relative">
+            <input
+              class="w-full p-2 rounded mt-2 outline-none"
+              type="password"
+              placeholder="Password"
+            />
+            <hr class="absolute bottom-0 z-50 w-full bg-red-500" />
+          </div>
+
+          <button
+            class="w-full mt-6 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full"
+          >
+            Sign Up
+          </button>
+        </div>
+      </div>
+    </div>
     </section>
   </body>
 </html>
