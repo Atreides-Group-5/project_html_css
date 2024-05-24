@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.11.1/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    
+    <div class="bg-gray-100 flex items-center justify-center min-h-screen">
+        <div class="container mx-auto p-6 bg-white rounded-lg shadow-lg">
+            <div class="flex flex-col md:flex-row gap-6">
+                <!-- Traveler Information -->
+                <div class="flex-1">
+                    <h2 class="text-xl font-semibold mb-4">ข้อมูลผู้เดินทาง</h2>
+                    <button class="btn btn-outline btn-info w-full mb-4">เพิ่มผู้เดินทางใหม่</button>
+                    <div class="space-y-4">
+                        <!-- Traveler Card 1 -->
+                        <div class="p-4 bg-white rounded-lg shadow flex justify-between items-center">
+                            <div>
+                                <h3 class="font-medium">สตีฟ โจ</h3>
+                                <p class="text-sm text-gray-500">ชาย | อเมริกัน</p>
+                                <p class="text-sm text-gray-500">หนังสือเดินทาง: AC5456222</p>
+                            </div>
+                            <button class="btn btn-ghost btn-xs">
+                                <img src="../../assets/pen.svg" width="20px">
+                            </button>
+                        </div>
+                        <!-- Traveler Card 2 -->
+                        <div class="p-4 bg-white rounded-lg shadow flex justify-between items-center">
+                            <div>
+                                <h3 class="font-medium">ฮิโรชิเอะ หมา</h3>
+                                <p class="text-sm text-gray-500">หญิง | ญี่ปุ่น</p>
+                                <p class="text-sm text-gray-500">หนังสือเดินทาง: AC4826523</p>
+                            </div>
+                            <button class="btn btn-ghost btn-xs">
+                                <img src="../../assets/pen.svg" width="20px">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Edit Traveler Information -->
+                <div class="flex-1">
+                    <h2 class="text-xl font-semibold mb-4">แก้ไขข้อมูลผู้เดินทาง</h2>
+                    <form>
+                        <div class="mb-4">
+                            <label for="first-name" class="block text-gray-700">ชื่อ</label>
+                            <input type="text" id="first-name" class="input input-bordered w-full mt-2" placeholder="">
+                        </div>
+                        <div class="mb-4">
+                            <label for="last-name" class="block text-gray-700">นามสกุล</label>
+                            <input type="text" id="last-name" class="input input-bordered w-full mt-2" placeholder="">
+                        </div>
+                        <div class="mb-4">
+                            <label for="nationality" class="block text-gray-700">สัญชาติ</label>
+                            <input type="text" id="nationality" class="input input-bordered w-full mt-2" placeholder="">
+                        </div>
+                        <div class="mb-4">
+                            <label for="birthdate" class="block text-gray-700">วันเกิด</label>
+                            <input type="date" id="birthdate" class="input input-bordered w-full mt-2">
+                        </div>
+                        <div class="mb-4">
+                            <label for="passport-number" class="block text-gray-700">หมายเลขหนังสือเดินทาง</label>
+                            <input type="text" id="passport-number" class="input input-bordered w-full mt-2" placeholder="">
+                        </div>
+                        <div class="mb-4">
+                            <label for="expiry-date" class="block text-gray-700">วันหมดอายุหนังสือเดินทาง</label>
+                            <input type="date" id="expiry-date" class="input input-bordered w-full mt-2">
+                        </div>
+                        <button type="submit" class="btn w-full bg-blue-500 hover:bg-blue-700 text-white rounded-lg">อัพเดตการเปลี่ยนแปลง</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+</body>
+</html>
